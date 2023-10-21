@@ -1,0 +1,36 @@
+12:47:46 **** Incremental Build of configuration Debug for project lab1 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:7:36: error: ../../../lib/std_types.h: No such file or directory
+../main.c:8:45: error: ../../../MCAL/DIO/DIO_interface.h: No such file or directory
+../main.c:9:44: error: ../../../MCAL/DIO/DIO_register.h: No such file or directory
+../main.c:10:35: error: ../../../lib/BIT_MATH.h: No such file or directory
+In file included from ../main.c:11:
+d:/imt_sdk_win_64/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:15: error: 'u8' undeclared (first use in this function)
+../main.c:15: error: (Each undeclared identifier is reported only once
+../main.c:15: error: for each function it appears in.)
+../main.c:15: error: expected ';' before 'i'
+../main.c:15: error: 'i' undeclared (first use in this function)
+../main.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../main.c:17: error: 'DIO_u8PORTA' undeclared (first use in this function)
+../main.c:17: error: 'DIO_u8PIN_OUTPUT' undeclared (first use in this function)
+../main.c:18: warning: implicit declaration of function 'DIO_SetPinValue'
+../main.c:18: error: 'DIO_u8PIN_LOW' undeclared (first use in this function)
+../main.c:20: error: expected ';' before 'i'
+../main.c:22: error: 'DIO_u8PORTB' undeclared (first use in this function)
+../main.c:22: error: 'DIO_u8PIN_INPUT' undeclared (first use in this function)
+../main.c:23: error: 'DIO_u8PIN_HIGH' undeclared (first use in this function)
+../main.c:28: warning: implicit declaration of function 'GET_BIT'
+../main.c:28: error: 'PINB' undeclared (first use in this function)
+../main.c:28: error: 'DIO_u8PIN0' undeclared (first use in this function)
+../main.c:32: error: 'DIO_u8PIN1' undeclared (first use in this function)
+../main.c:36: error: 'DIO_u8PIN2' undeclared (first use in this function)
+make: *** [main.o] Error 1
+
+12:47:48 Build Finished (took 2s.403ms)
+

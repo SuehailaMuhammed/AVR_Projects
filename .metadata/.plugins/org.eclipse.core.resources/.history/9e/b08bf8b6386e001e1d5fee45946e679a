@@ -1,0 +1,45 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 18, 2023
+ *      Author: future
+ */
+
+#include "stdTypes.h"
+#include <avr/io.h>
+#include <util/delay.h>
+
+#define DDRA *((u8*)0x3A)
+#define DDRB *((u8*)0x3B)
+#define PORTA *((u8*)0x3B)
+#define
+int main(void) {
+    // Configure PORTA pins 0 and 1 for LED control
+    DDRA = (1 << PA0) | (1 << PA1);
+
+    // Configure PORTB pins 0, 1, and 2 for push buttons
+    DDRB = 0x00; // All pins as input
+
+    while (1) {
+        // Read the state of the push buttons
+        uint8_t buttonState = PINB;
+
+        if (!(buttonState & (1 << PB0))) {
+            // If switch 1 is pressed, turn on LED1
+            PORTA = (1 << PA0);
+        } else if (!(buttonState & (1 << PB1))) {
+            // If switch 2 is pressed, turn on LED2
+            PORTA = (1 << PA1);
+        } else if (!(buttonState & (1 << PB2))) {
+            // If switch 3 is pressed, turn on both LEDs
+            PORTA = (1 << PA0) | (1 << PA1);
+        } else {
+            // If no switches are pressed, turn off both LEDs
+            PORTA = 0x00;
+        }
+
+        _delay_ms(100); // Delay for switch debouncing and to save processing time
+    }
+
+    return 0;
+}
