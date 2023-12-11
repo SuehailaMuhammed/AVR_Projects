@@ -1,0 +1,16 @@
+06:00:44 **** Incremental Build of configuration Debug for project CALC ****
+make all 
+Building target: CALC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CALC.map -mmcu=atmega32 -o "CALC.elf"  ./DIO_prog.o ./LCD_prog.o ./main.o   
+./main.o: In function `main':
+../main.c:53: undefined reference to `KEYPAD_u8GetPressedKey'
+../main.c:75: undefined reference to `KEYPAD_u8GetPressedKey'
+../main.c:92: undefined reference to `calc_sum'
+../main.c:93: undefined reference to `calc_sub'
+../main.c:94: undefined reference to `calc_multi'
+../main.c:95: undefined reference to `calc_div'
+make: *** [CALC.elf] Error 1
+
+06:00:44 Build Finished (took 606ms)
+

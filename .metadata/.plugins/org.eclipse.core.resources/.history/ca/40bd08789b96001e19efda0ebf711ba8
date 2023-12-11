@@ -1,0 +1,9 @@
+/*
+ * CAL_config.h
+ *
+ *  Created on: Dec 9, 2023
+ *      Author: future
+ */
+
+
+#define CALCULATOR_ON								'c'

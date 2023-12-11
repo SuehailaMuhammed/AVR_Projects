@@ -1,0 +1,53 @@
+16:38:42 **** Incremental Build of configuration Debug for project CAL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 libCAL.a
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:       0 bytes (0.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:       0 bytes (0.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:       0 bytes (0.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:      29 bytes (0.1% Full)
+(.text + .data + .bootloader)
+
+Data:         29 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:38:43 Build Finished (took 476ms)
+

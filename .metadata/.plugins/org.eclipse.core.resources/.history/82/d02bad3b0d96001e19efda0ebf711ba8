@@ -1,0 +1,30 @@
+/*
+ * LCD_int.h
+ *
+ *  Created on: Dec 8, 2023
+ *      Author: future
+ */
+
+#ifndef LCD_INT_H_
+#define LCD_INT_H_
+
+ES_t LCD_enuInit(void);
+
+ES_t LCD_enuDisplayChar(u8 Copy_u8Data);
+ES_t LCD_enuSendStringPos(u8 *string,u8 row,u8 column);
+ES_t LCD_enuSendCommand(u8 Copy_u8Command);
+
+
+
+
+
+
+ES_t LCD_enuSendChar(u8 _char);
+ES_t LCD_enuSendCharPos(u8 _char,u8 row,u8 column);
+ES_t LCD_enuSendString(u8 *string);
+ES_t LCD_enuSendStringPos(u8 *string,u8 row,u8 column);
+ES_t LCD_enuSendNumber(u32 num);
+ES_t LCD_enuSendNumberPos(u32 num,u8 row,u8 column);
+
+
+#endif /* LCD_INT_H_ */

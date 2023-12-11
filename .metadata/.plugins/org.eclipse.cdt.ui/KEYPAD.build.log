@@ -1,0 +1,12 @@
+23:47:07 **** Incremental Build of configuration Debug for project KEYPAD ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:15: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:24: error: too few arguments to function 'KEYPAD_u8GetPressedkey'
+make: *** [main.o] Error 1
+
+23:47:07 Build Finished (took 828ms)
+

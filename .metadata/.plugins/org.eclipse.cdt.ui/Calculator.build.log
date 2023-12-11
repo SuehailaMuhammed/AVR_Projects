@@ -1,0 +1,31 @@
+18:58:46 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+../DIO_prog.c: In function 'Dio_init':
+../DIO_prog.c:12: error: 'uint8' undeclared (first use in this function)
+../DIO_prog.c:12: error: (Each undeclared identifier is reported only once
+../DIO_prog.c:12: error: for each function it appears in.)
+../DIO_prog.c:12: error: expected ';' before 'counter'
+../DIO_prog.c:13: error: 'counter' undeclared (first use in this function)
+../DIO_prog.c:13: error: 'PIN_COUNT' undeclared (first use in this function)
+../DIO_prog.c:15: error: 'pin' undeclared (first use in this function)
+../DIO_prog.c:15: error: 'PORT_A' undeclared (first use in this function)
+../DIO_prog.c:17: error: 'OUTPUT' undeclared (first use in this function)
+../DIO_prog.c:18: warning: implicit declaration of function 'SET_BIT'
+../DIO_prog.c:18: error: 'DDRA' undeclared (first use in this function)
+../DIO_prog.c:20: warning: implicit declaration of function 'CLEAR_BIT'
+../DIO_prog.c:22: error: 'PORT_B' undeclared (first use in this function)
+../DIO_prog.c:25: error: 'DDRB' undeclared (first use in this function)
+../DIO_prog.c:29: error: 'PORT_C' undeclared (first use in this function)
+../DIO_prog.c:32: error: 'DDRC' undeclared (first use in this function)
+../DIO_prog.c:36: error: 'PORT_D' undeclared (first use in this function)
+../DIO_prog.c:39: error: 'DDRD' undeclared (first use in this function)
+../DIO_prog.c: At top level:
+../DIO_prog.c:45: error: expected ')' before 'ch'
+../DIO_prog.c:97: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Dio_Read'
+make: *** [DIO_prog.o] Error 1
+
+18:58:46 Build Finished (took 390ms)
+
